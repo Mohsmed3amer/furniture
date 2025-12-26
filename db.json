@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "كنبة فخمة",
+      "description": "كنبة مريحة مصنوعة من الجلد الصناعي عالي الجودة",
+      "price": 2500,
+      "category": "كنب",
+      "stock": 15,
+      "image": "🛋️",
+      "createdAt": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "name": "طاولة طعام",
+      "description": "طاولة طعام خشبية تتسع لـ 8 أشخاص",
+      "price": 1800,
+      "category": "طاولات",
+      "stock": 8,
+      "image": "🍽️",
+      "createdAt": "2023-10-02"
+    },
+    {
+      "id": 3,
+      "name": "سرير مزدوج",
+      "description": "سرير خشبي عريض مع مرتبة مريحة",
+      "price": 3200,
+      "category": "أسرة",
+      "stock": 5,
+      "image": "🛏️",
+      "createdAt": "2023-10-03"
+    },
+    {
+      "id": 4,
+      "name": "خزانة ملابس",
+      "description": "خزانة ملابس كبيرة بأبواب منزلقة",
+      "price": 2100,
+      "category": "خزائن",
+      "stock": 12,
+      "image": "👔",
+      "createdAt": "2023-10-04"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerId": 2,
+      "customerName": "مستخدم عادي",
+      "customerEmail": "user@furniture.com",
+      "customerPhone": "+966500000002",
+      "items": [
+        {
+          "productId": 1,
+          "name": "كنبة فخمة",
+          "quantity": 1,
+          "price": 2500
+        }
+      ],
+      "total": 2500,
+      "status": "pending",
+      "orderDate": "2023-10-10",
+      "deliveryAddress": "الرياض، حي النخيل"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "مدير النظام",
+      "email": "admin@furniture.com",
+      "password": "admin123",
+      "role": "admin",
+      "phone": "+966500000001",
+      "address": "الرياض، المملكة العربية السعودية",
+      "joinDate": "2023-01-01"
+    },
+    {
+      "id": 2,
+      "name": "مستخدم عادي",
+      "email": "user@furniture.com",
+      "password": "user123",
+      "role": "user",
+      "phone": "+966500000002",
+      "address": "جدة، المملكة العربية السعودية",
+      "joinDate": "2023-06-15"
+    }
+  ],
+  "cart": []
+}
