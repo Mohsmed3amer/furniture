@@ -1,70 +1,308 @@
-# Getting Started with Create React App
+# 🛋️ Furniture Gallery - Complete Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![React Router](https://img.shields.io/badge/React_Router-6.14.0-orange)
+![JSON Server](https://img.shields.io/badge/JSON_Server-0.17.3-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## Available Scripts
+🌐 **Live Demo:** [https://furniture-eight-gold.vercel.app/](https://furniture-eight-gold.vercel.app/)
 
-In the project directory, you can run:
+## 📖 Overview
 
-### `npm start`
+**Furniture Gallery** is a complete furniture store management system built with React. It features a modern Arabic interface with full CRUD operations, user authentication, shopping cart system, and dark/light mode support.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🎨 User Interface
+- Modern, responsive design
+- Full Arabic language support
+- Dark/Light mode toggle
+- Intuitive and user-friendly interface
 
-### `npm test`
+### 🔐 Authentication & Authorization
+- User login and registration
+- Role-based access (Admin/User)
+- Protected routes
+- Session management
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛍️ Product Management (Full CRUD)
+- **Create** new products
+- **Read** and display all products
+- **Update** product information
+- **Delete** products
+- Stock and price management
+- Product categorization
 
-### `npm run build`
+### 🛒 Shopping System
+- Shopping cart for users
+- Add/remove items from cart
+- Quantity adjustment
+- Checkout process
+- Order tracking
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📊 Admin Dashboard
+- Sales statistics overview
+- System performance metrics
+- Order and user management
+- Detailed reports
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 👤 User Profile
+- View and edit personal information
+- Order history tracking
+- Purchase statistics
+- Contact information update
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Quick Start
 
-### `npm run eject`
+### Prerequisites
+- Node.js (Version 14 or higher)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/furniture-website.git
+cd furniture-website
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Run the application**
+```bash
+# Run both React app and JSON Server together
+npm run dev
 
-## Learn More
+# Or run separately in different terminals
+npm start          # For React app
+npm run server     # For JSON Server
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open the application**
+- App: http://localhost:3000
+- API Server: http://localhost:3001
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Default Login Credentials
 
-### Code Splitting
+**Admin:**
+- Email: `admin@furniture.com`
+- Password: `admin123`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Regular User:**
+- Email: `user@furniture.com`
+- Password: `user123`
 
-### Analyzing the Bundle Size
+## 📱 Main Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1. **Login** (`/login`)
+- Secure login interface
+- Credentials validation
+- Automatic redirection
 
-### Making a Progressive Web App
+### 2. **Register** (`/register`)
+- Create new account
+- Password confirmation
+- Auto-login after registration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 3. **Dashboard** (`/dashboard`) - Admin Only
+- Sales statistics
+- System overview
+- Quick actions
 
-### Advanced Configuration
+### 4. **Products** (`/products`)
+- Browse all products
+- Add/edit/delete (Admin only)
+- Add to cart (Users)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 5. **Shopping Cart** (`/cart`) - Users Only
+- View added items
+- Adjust quantities
+- Complete purchase
 
-### Deployment
+### 6. **Orders** (`/orders`)
+- View all orders
+- Update order status (Admin)
+- Track orders (Users)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 7. **Profile** (`/profile`)
+- View personal information
+- Edit profile details
+- Purchase history
 
-### `npm run build` fails to minify
+## 🏗️ Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+furniture-website/
+├── public/                 # Static files
+├── src/
+│   ├── components/         # Reusable components
+│   │   ├── Layout/        # Layout components
+│   │   ├── Products/      # Product components
+│   │   ├── Auth/          # Authentication components
+│   │   └── Dashboard/     # Dashboard components
+│   ├── context/           # Global state management
+│   ├── pages/             # Main pages
+│   ├── services/          # API services
+│   ├── styles/            # CSS styles
+│   ├── App.jsx           # Main App component
+│   └── index.js          # Entry point
+├── db.json               # Local JSON database
+└── package.json          # Project configuration
+```
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **React** | Frontend library | 18.2.0 |
+| **React Router DOM** | Routing | 6.14.0 |
+| **Axios** | HTTP requests | 1.4.0 |
+| **JSON Server** | Mock API backend | 0.17.3 |
+| **Concurrently** | Run multiple commands | 8.2.0 |
+| **CSS3** | Styling | - |
+
+## 🔧 API Endpoints
+
+### JSON Server Endpoints
+```
+GET    /products        # Get all products
+GET    /products/:id    # Get single product
+POST   /products        # Add new product
+PUT    /products/:id    # Update product
+DELETE /products/:id    # Delete product
+
+GET    /orders         # Get all orders
+POST   /orders         # Create new order
+PUT    /orders/:id     # Update order
+DELETE /orders/:id     # Delete order
+
+GET    /users          # Get all users
+POST   /users          # Add new user
+```
+
+## 🎨 Features in Detail
+
+### 🌙 Dark/Light Mode
+- Toggle between themes
+- Theme preference saved in localStorage
+- Smooth transitions between modes
+
+### 🛒 Shopping Cart Features
+- Persistent cart storage
+- Real-time quantity updates
+- Total price calculation
+- Stock validation
+
+### 👑 Admin Privileges
+- Full product management (CRUD)
+- Order status management
+- View system statistics
+- User management capabilities
+
+### 👤 User Features
+- Product browsing
+- Shopping cart operations
+- Order placement
+- Profile management
+
+## 📦 Deployment
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Deploy to Vercel (Recommended)
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
+
+### Environment Variables
+Create `.env` file for production:
+```env
+REACT_APP_API_URL=https://your-api-url.com
+```
+
+## 🧪 Testing & Debugging
+
+### Development Tools
+- React DevTools for component inspection
+- Browser DevTools for network monitoring
+- Console logging for debugging
+
+### Common Debugging Commands
+```javascript
+// Check data flow
+console.log('Products:', products);
+console.log('User:', user);
+
+// Check authentication status
+console.log('isAdmin:', isAdmin, 'isAuthenticated:', isAuthenticated);
+```
+
+## 🔒 Security Features
+
+- Protected routes based on user roles
+- Secure login with token-based authentication
+- Input validation on all forms
+- LocalStorage data sanitization
+
+## 📈 Performance Optimizations
+
+- Lazy loading for components
+- Optimized image handling
+- Efficient state management
+- Memoized calculations
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+### Coding Standards
+- Use meaningful variable names
+- Add comments for complex logic
+- Follow consistent formatting
+- Write descriptive commit messages
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Development Team
+
+### Lead Developer
+- **Name**: [Your Name]
+- **Email**: [Your Email]
+- **GitHub**: [Your GitHub Profile]
+
+### Contributors
+- Open to all contributions!
+
+## 🙏 Acknowledgments
+
+- React team for the amazing library
+- The open-source community
+- All contributors to this project
+
+## 📞 Support & Contact
+
+### Report Issues
+1. Check existing [issues](https://github.com/.../issues)
+2. Open a [new issue](https://github.com/.../issues/new)
+
+### Questions & Discussions
+- Use GitHub [Discussions](https://github.com/.../discussions)
+- Email the development team
+
+---
+Built with ❤️ for the tech community
